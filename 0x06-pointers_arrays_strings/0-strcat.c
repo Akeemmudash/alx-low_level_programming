@@ -1,15 +1,16 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
-"main- entry point to code
-*
-*description: contains function that concatenates 2 strings
-*Return: Always 0.
-*/
-int main(void)
+ *main - entry point
+ * Return: Always 0
+ * _strcat - concat 2 strings
+ * @dest:char
+ * @src:char
+ * Return:char
+ */
+int main(void){
+char *_strcat(char *dest, char *src)
 {
-	char *strcat(char *dest, char *src)
-	{
-	
 	char *s = dest;
 
 	while (*dest != '\0')
@@ -24,9 +25,7 @@ int main(void)
 		src++;
 	}
 	*dest = '\0';
-	
-	}
-
+	return (s);
+}
 	return (0);
 }
-
