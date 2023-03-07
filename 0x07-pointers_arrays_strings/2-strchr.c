@@ -16,13 +16,14 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	while (*s)
+	while (*s != '\0')
 	{
 		if (s[i] == c)
 		{
 		return (s);
-
-		} if (*s == '\0')
+		}
+		i++;
+	} if (*s == '\0')
 		return (s);
 	
 	return NULL;
