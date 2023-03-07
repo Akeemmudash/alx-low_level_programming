@@ -18,8 +18,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (i < n)
 	{
-	**(ptdest + i) = src[i];
+	*(ptdest + i) = src[i];
 	i++;
 	}
-	return (**ptdest);
+	return (dest);
 }
