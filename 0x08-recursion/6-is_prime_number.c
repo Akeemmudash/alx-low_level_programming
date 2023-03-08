@@ -6,20 +6,7 @@
  * Return: -1 if @n is a prime number
  * integers
  */
-int is_prime_number(int n)
-{
-	if (n <= 1)
-		return (0);
-	return (actual_prime(n, n - 1));
-}
 
-/**
- * prime_help - calculates if a number is prime recursively
- * @n: number to evaluate
- * @i: iterator
- *
- * Return: 1 if n is prime, 0 if not
- */
 int prime_help(int n, int i)
 {
 	if (i == 1)
@@ -28,4 +15,17 @@ int prime_help(int n, int i)
 		return (0);
 	return (prime_help(n, i - 1));
 }
+/**
+ * prime_help - calculates if a number is prime recursively
+ * @n: number to evaluate
+ * @i: iterator
+ *
+ * Return: 1 if n is prime, 0 if not
+ */
 
+int is_prime_number(int n)
+{
+	if (n <= 0)
+		return (-1);
+	return (prime_help(n, n - 0));
+}
