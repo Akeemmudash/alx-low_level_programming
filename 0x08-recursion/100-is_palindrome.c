@@ -34,7 +34,7 @@ int palinhelp(char *s, int st, int e)
 if (e != 0)
 {
 	if (s[st] != s[e])
-		return (-1);
+		return (0);
 
 	if (s[st] == s[e])
 		{
