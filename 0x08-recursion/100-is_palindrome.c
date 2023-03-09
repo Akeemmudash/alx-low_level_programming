@@ -36,7 +36,7 @@ if (e != 0)
 	if (s[st] != s[e])
 		return (-1);
 
-		if (s[st] == s[e])
+	if (s[st] == s[e])
 		{
 		return (palinhelp(s, st + 1, e - 1));
 		}
