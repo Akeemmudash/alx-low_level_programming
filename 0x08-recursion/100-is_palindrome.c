@@ -54,6 +54,8 @@ if (e != 0)
 
 int is_palindrome(char *s)
 {
+	int e;
+
 	int palinlength = length(s, 0);
 
 	if (palinlength == 0)
@@ -61,7 +63,7 @@ int is_palindrome(char *s)
 		return (1);
 	}
 
-	int e =  palinlength - 1;
+	e =  palinlength - 1;
 
 	return (palinhelp(s, 0, e));
 }
